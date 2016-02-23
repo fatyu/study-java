@@ -1,0 +1,29 @@
+Why programmer must override hashcode
+为不相等的对象生成不同整数结果可以提高哈希表的性能。
+必须为重写了equals的类重写hashcode方法
+How to Override a ideal hashcode method
+
+1.	compute a hash code for the field
+		i: variable a nozero int fro compute 
+
+		ii:depend on fields value
+			field is boolean 	(field?1:0)
+			char byte short 	(int)field
+			long 						(field^field>>>32)
+			float						Float.floatToIntBits(field)
+			double					Double.doubleToIntBits(field)
+			Object					Object.hashCode()
+			
+			Array					public static int hashCode(long a[]) {
+									        if (a == null)
+									            return 0;
+									
+									        int result = 1;
+									        for (long element : a) {
+									            int elementHash = (int)(element ^ (element >>> 32));
+									            result = 31 * result + elementHash;
+									        }
+									
+									        return result;
+									    }
+		iii:		return result

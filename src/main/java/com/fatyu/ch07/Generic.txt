@@ -1,0 +1,1 @@
+实现Compable<T>重写compareTo方法只用同类对象的比较

@@ -1,0 +1,26 @@
+面向对象的分析:	
+
+1. 分析对象: 		
+	产品容器(PC)
+	产品(Product)
+	生产者(Producter)
+	消费者(Consumer)
+
+2. 对象的属性和方法:	
+	产品容器(PC):
+		index-->指向产品数组当前位置
+		createProduct()生产产品[synchronized]
+		consumeProduct()消费产品[synchronized]
+	产品(Product)
+		id-->产品标识
+	生产者(Producter)
+		createProduct()生产产品
+	消费者(Consumer)
+		consumeProduct()消费产品
+		
+		
+-------------------------------------------------------------------------------
+synchronized进行资源的同步[锁操作]
+while进行条件判断
+wait方法的使用-->是当前线程处于等待状态 对资源没有进行锁操作
+notify方法的使用-->唤醒其他线程
