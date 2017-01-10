@@ -10,10 +10,10 @@ public class TestDeadLockThread {
 
 		DeadLockThread dlt1 = new DeadLockThread();
 		DeadLockThread dlt2 = new DeadLockThread();
-		
+
 		Thread t1 = new Thread(dlt1);
 		Thread t2 = new Thread(dlt2);
-		
+
 		dlt1.flag = true;
 		dlt2.flag = false;
 		System.out.println(DeadLockThread.ro.resourceName);

@@ -1,6 +1,8 @@
 package com.fatyu.jdbc;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class TestScroll {
 	public static void main(String[] args) {
@@ -9,10 +11,8 @@ public class TestScroll {
 		PreparedStatement ps = null;
 		try {
 			conn = JdbcUtil.getConnection();
-			ps = conn
-					.prepareStatement("select * from fatyu",
-							ResultSet.TYPE_SCROLL_SENSITIVE,
-							ResultSet.CONCUR_READ_ONLY);
+			ps = conn.prepareStatement("select * from fatyu", ResultSet.TYPE_SCROLL_SENSITIVE,
+					ResultSet.CONCUR_READ_ONLY);
 			rs = ps.executeQuery();
 
 			while (rs.next()) {

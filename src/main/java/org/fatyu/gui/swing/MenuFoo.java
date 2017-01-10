@@ -33,13 +33,9 @@ class MenuFrame extends JFrame {
 		menuBar.add(jm);
 		menuBar.add(jm1);
 		// Ìí¼Ó²Ëµ¥Ïîµ½²Ëµ¥
-		JMenuItem new_jmd = new JMenuItem(
-				"New...",
-				new ImageIcon(
-						"E:\\Work\\WorkSpace\\Java\\src\\org\\fatyu\\gui\\swing\\blue.gif"));//Ìí¼ÓÍ¼Æ¬°´Å¥
-		JMenuItem del_jmd = new JMenuItem(
-				"Del...",
-				'D');//Ìí¼Ó¿ì½Ý°´¼ü
+		JMenuItem new_jmd = new JMenuItem("New...",
+				new ImageIcon("E:\\Work\\WorkSpace\\Java\\src\\org\\fatyu\\gui\\swing\\blue.gif"));//Ìí¼ÓÍ¼Æ¬°´Å¥
+		JMenuItem del_jmd = new JMenuItem("Del...", 'D');//Ìí¼Ó¿ì½Ý°´¼ü
 		jm.add(new_jmd);
 		jm.add(del_jmd);
 	}

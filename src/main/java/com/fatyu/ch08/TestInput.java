@@ -24,13 +24,11 @@ public class TestInput {
 				System.out.print((char) c);
 				num++;
 			}
-			System.out
-					.println("===============================fis readed========================");
+			System.out.println("===============================fis readed========================");
 			while ((c = fr.read()) != -1) {
 				System.out.print((char) c);
 			}
-			System.out
-					.println("===============================fr readed========================");
+			System.out.println("===============================fr readed========================");
 			fis.close();
 			System.out.println("文件大小为:" + num + "字节");
 		} catch (Exception e) {

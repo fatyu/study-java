@@ -56,11 +56,11 @@ public class SelectSort {
 			for (in = out + 1; in < array.length; in++) {
 				if (array[min] > array[in]) {
 					min = in;
-					
+
 				}
 			}
-			swap(array,out,min);
-			
+			swap(array, out, min);
+
 		}
 		return array;
 	}
@@ -81,4 +81,3 @@ public class SelectSort {
 	}
 
 }
-

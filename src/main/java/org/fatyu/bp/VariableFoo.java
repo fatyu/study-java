@@ -9,22 +9,22 @@ package org.fatyu.bp;
  * @author Fatyu
  */
 public class VariableFoo {
-    /**
-     * 默认构造方法
-     */
-    public VariableFoo() {
-        super();
-    }
+	/**
+	 * 默认构造方法
+	 */
+	public VariableFoo() {
+		super();
+	}
 
-    /**
-     *主方法
-     * @param args
-     */
-    @SuppressWarnings("unused")
+	/**
+	 *主方法
+	 * @param args
+	 */
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-        int a; //变量a 只被声明,没有被初始化(赋值);
-        int b = 0; //变量b,被声明同时赋值为0
-        //int goto =0; 因为goto是关键字.所以此语句会报编译时错误
-        //int 123 = 0;因为变量开头是数字.所以此语句会报编译时错误
-    }
+		int a; //变量a 只被声明,没有被初始化(赋值);
+		int b = 0; //变量b,被声明同时赋值为0
+		//int goto =0; 因为goto是关键字.所以此语句会报编译时错误
+		//int 123 = 0;因为变量开头是数字.所以此语句会报编译时错误
+	}
 }

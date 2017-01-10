@@ -17,13 +17,14 @@ public class TCPServer {
 
 	public static void main(String[] args) {
 		try {
+			@SuppressWarnings("resource")
 			ServerSocket ss = new ServerSocket(8888);
 			while (true) {
 				Socket s = ss.accept();
 				System.out.println("success listen a client");
 				File file = new File("e:/bak.avi");
 
-				FileInputStream fis =  (FileInputStream)s.getInputStream();
+				FileInputStream fis = (FileInputStream) s.getInputStream();
 				FileOutputStream fos = new FileOutputStream(file);
 				int c;
 				while ((c = fis.read()) != -1) {

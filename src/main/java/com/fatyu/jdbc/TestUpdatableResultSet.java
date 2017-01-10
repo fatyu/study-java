@@ -10,8 +10,7 @@ public class TestUpdatableResultSet {
 
 		try {
 			conn = JdbcUtil.getConnection();
-			ps = conn.prepareStatement("select * from fatyu",
-					ResultSet.TYPE_SCROLL_INSENSITIVE,
+			ps = conn.prepareStatement("select * from fatyu", ResultSet.TYPE_SCROLL_INSENSITIVE,
 					ResultSet.CONCUR_UPDATABLE);
 			rs = ps.executeQuery();
 

@@ -1,6 +1,7 @@
 package com.effective.ch3.item08;
 
 import java.awt.Color;
+
 /**
  * 重写高质量的equals方法
  * @@author Fatyu

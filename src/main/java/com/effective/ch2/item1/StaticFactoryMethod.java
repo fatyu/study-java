@@ -8,7 +8,7 @@ package com.effective.ch2.item1;
 public class StaticFactoryMethod {
 	public static void main(String[] args) {
 		Person student1 = Student.getOneStudent();
-		Student student2 = (Student)Student.getOneStudent();
+		Student student2 = (Student) Student.getOneStudent();
 		System.out.println(student1.equals(student2));
 		System.out.println(student1 == student2);
 		System.out.println(student1.say("no say1"));

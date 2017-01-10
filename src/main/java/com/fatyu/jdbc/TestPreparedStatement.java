@@ -9,8 +9,7 @@ public class TestPreparedStatement {
 		Connection conn = JdbcUtil.getConnection();// 获得数据库连接
 		PreparedStatement ps = null;
 		try {
-			ps = conn
-					.prepareStatement("insert into fatyu (id,name) values (?,?)");// 通过连接对象创建Ps对象
+			ps = conn.prepareStatement("insert into fatyu (id,name) values (?,?)");// 通过连接对象创建Ps对象
 			for (int i = 0; i < 100; i++) {
 				ps.setInt(1, i);// 设置sql的第一个字段
 				ps.setString(2, "Fatyu" + i);// 设置sql的第二个字段

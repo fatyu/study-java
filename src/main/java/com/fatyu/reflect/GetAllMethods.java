@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  */
 public class GetAllMethods {
 	public static void main(String[] args) throws ClassNotFoundException {
-		if(args.length<=0){
+		if (args.length <= 0) {
 			args = new String[1];
 			args[0] = "java.util.LinkedList";
 		}

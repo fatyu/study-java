@@ -27,6 +27,7 @@ class SelectComponentFrame extends JFrame {
 	private JCheckBox blod;
 	private JCheckBox italic;
 	JPanel jp = new JPanel();
+
 	public SelectComponentFrame() {
 		this.setName("SelectFrame");
 		this.setAlwaysOnTop(true);

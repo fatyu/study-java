@@ -8,29 +8,29 @@ package org.fatyu.bp;
  * @see java.math.BigDecimal --> {不可变的、任意精度的有符号十进制数}
  */
 public class FloatFoo {
-    /**
-     * 默认构造方法
-     */
-    public FloatFoo() {
-        super();
-    }
+	/**
+	 * 默认构造方法
+	 */
+	public FloatFoo() {
+		super();
+	}
 
-    /**
-     *主方法
-     * @param args
-     */
-    public static void main(String[] args) {
-        float fi = 2.5f; //单精度浮点类型要加f或者F来表示.没有f或者F的默认是双精度double类型
-        float fj = 3.5F;
-        float add = fi + fj;
-        float subtract = fi - fj;
-        float multi = fi * fj;
-        float divi = fi / fj;
-        float model = fi % fj;
-        System.out.println("加法:" + add);
-        System.out.println("减法:" + subtract);
-        System.out.println("乘法:" + multi);
-        System.out.println("除法:" + divi);
-        System.out.println("求模:" + model);
-    }
+	/**
+	 *主方法
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		float fi = 2.5f; //单精度浮点类型要加f或者F来表示.没有f或者F的默认是双精度double类型
+		float fj = 3.5F;
+		float add = fi + fj;
+		float subtract = fi - fj;
+		float multi = fi * fj;
+		float divi = fi / fj;
+		float model = fi % fj;
+		System.out.println("加法:" + add);
+		System.out.println("减法:" + subtract);
+		System.out.println("乘法:" + multi);
+		System.out.println("除法:" + divi);
+		System.out.println("求模:" + model);
+	}
 }

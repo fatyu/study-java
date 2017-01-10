@@ -17,9 +17,9 @@ public class TestBigInteger {
 		BigInteger result = BigInteger.valueOf(1);
 
 		for (int i = 1; i <= gs; i++) {
-			result = result.multiply(BigInteger.valueOf(an - i + 1)).divide(
-					BigInteger.valueOf(i));
+			result = result.multiply(BigInteger.valueOf(an - i + 1)).divide(BigInteger.valueOf(i));
 		}
 		System.out.println("结果是：" + result);
+		in.close();
 	}
 }

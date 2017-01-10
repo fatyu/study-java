@@ -18,7 +18,7 @@ public class UDPClient {
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		}
-		
+
 		int i = 0;
 		byte[] filebytes = new byte[(int) file.length()];
 

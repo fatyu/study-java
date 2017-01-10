@@ -8,29 +8,29 @@ package org.fatyu.bp;
  * @see java.math.BigDecimal --> {不可变的、任意精度的有符号十进制数}
  */
 public class DoubleFoo {
-    /**
-     * 默认构造方法
-     */
-    public DoubleFoo() {
-        super();
-    }
+	/**
+	 * 默认构造方法
+	 */
+	public DoubleFoo() {
+		super();
+	}
 
-    /**
-     *主方法
-     * @param args
-     */
-    public static void main(String[] args) {
-        double fi = 2.5;
-        double fj = 3.5;
-        double add = fi + fj;
-        double subtract = fi - fj;
-        double multi = fi * fj;
-        double divi = fi / fj;
-        double model = fi % fj;
-        System.out.println("加法:" + add);
-        System.out.println("减法:" + subtract);
-        System.out.println("乘法:" + multi);
-        System.out.println("除法:" + divi);
-        System.out.println("求模:" + model);
-    }
+	/**
+	 *主方法
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		double fi = 2.5;
+		double fj = 3.5;
+		double add = fi + fj;
+		double subtract = fi - fj;
+		double multi = fi * fj;
+		double divi = fi / fj;
+		double model = fi % fj;
+		System.out.println("加法:" + add);
+		System.out.println("减法:" + subtract);
+		System.out.println("乘法:" + multi);
+		System.out.println("除法:" + divi);
+		System.out.println("求模:" + model);
+	}
 }

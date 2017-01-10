@@ -9,24 +9,21 @@ package org.fatyu.string;
  * @author 张羽
  * @version 1.0
  */
-public class CodePointFoo
-{
-  public CodePointFoo()
-  {
-    super();
-  }
+public class CodePointFoo {
+	public CodePointFoo() {
+		super();
+	}
 
-  /**
-   * 程序入口-main方法.
-   * @param args
-   */
-  public static void main(String[] args)
-  {
-    String str = "zhangyu";
-    System.out.println(str);
-    int codepoint = str.codePointAt(2);
-    int tureLength = str.codePointCount(0, str.length());
-    System.out.println("unicode is " + codepoint);
-    System.out.println(tureLength);
-  }
+	/**
+	 * 程序入口-main方法.
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String str = "zhangyu";
+		System.out.println(str);
+		int codepoint = str.codePointAt(2);
+		int tureLength = str.codePointCount(0, str.length());
+		System.out.println("unicode is " + codepoint);
+		System.out.println(tureLength);
+	}
 }

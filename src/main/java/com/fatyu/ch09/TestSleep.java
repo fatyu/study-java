@@ -34,8 +34,7 @@ class SleepThread extends Thread {
 				e.printStackTrace();
 			}
 
-			System.out.println("---------------" + new Date()
-					+ "--------------------");
+			System.out.println("---------------" + new Date() + "--------------------");
 
 		}
 	}

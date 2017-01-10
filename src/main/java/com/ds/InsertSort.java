@@ -57,9 +57,9 @@ public class InsertSort {
 		int in;
 		for (int out = 1; out < array.length; out++) {
 			in = out;
-			
-			while(in>0&&array[in-1]>array[in]){
-				swap(array,in,in-1);
+
+			while (in > 0 && array[in - 1] > array[in]) {
+				swap(array, in, in - 1);
 				in--;
 			}
 		}
@@ -82,4 +82,3 @@ public class InsertSort {
 	}
 
 }
-

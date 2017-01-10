@@ -20,7 +20,7 @@ public class TestSet {
 		set.add("Hello");
 		set.add(123);
 		set.add(456);
-//输出结果无顺序【进行复制时不是按照数组的顺序进行赋值的】
+		//输出结果无顺序【进行复制时不是按照数组的顺序进行赋值的】
 		Iterator<Object> it = set.iterator();
 		while (it.hasNext()) {
 			System.out.println(it.next());

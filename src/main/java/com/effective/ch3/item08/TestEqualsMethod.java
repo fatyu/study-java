@@ -24,16 +24,16 @@ public class TestEqualsMethod {
 
 		System.out.println(tem1 == tem2);
 		//System.out.println(tem1 == tem1);
-		
+
 		String s1 = "string_s";
 		String s2 = "string_s";
 		String s3 = new String("string_s");
-		
+
 		System.out.println(s1.equals(s2));
-		System.out.println(s1==s2);
+		System.out.println(s1 == s2);
 		System.out.println("------------------------");
 
 		System.out.println(s1.equals(s3));
-		System.out.println(s1==s3);
+		System.out.println(s1 == s3);
 	};
 }

@@ -51,7 +51,6 @@ public class Person {
 	 * @@return info
 	 */
 	public String getInfo() {
-		return "name:" + name + "\nid:" + id + "\nage:" + age + "\naddress:"
-				+ address;
+		return "name:" + name + "\nid:" + id + "\nage:" + age + "\naddress:" + address;
 	}
 }

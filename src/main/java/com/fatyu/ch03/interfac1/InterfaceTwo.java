@@ -9,15 +9,14 @@ public interface InterfaceTwo {
 	int i = 20;
 
 	public static final int j = 20;
-	
-	
+
 	/**
 	 * 成员方法
 	 * @@return 
 	 */
 	//默认的abstract public 修饰
 	abstract public void method1();
-	
+
 	String method2();
-	
+
 }

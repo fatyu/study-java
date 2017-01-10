@@ -8,12 +8,12 @@ package org.fatyu.thread.executorTest;
  * @author Fatyu
  *
  */
-public class ExecutorTest{
+public class ExecutorTest {
 
-    public static void main(String[] args){
-	//线程池的3种创建方法
-	//1.使用Executors.newCacheThreadPool()--创建一个可根据需要创建新线程的线程池
-	//2.使用Executors.newFixedThreadPool()--创建一个固定大小的线程池
-	//3.使用Executors.newSingleThreadExecutor()--创建一个只有一个线程的线程池.顺序执行
-    }
+	public static void main(String[] args) {
+		//线程池的3种创建方法
+		//1.使用Executors.newCacheThreadPool()--创建一个可根据需要创建新线程的线程池
+		//2.使用Executors.newFixedThreadPool()--创建一个固定大小的线程池
+		//3.使用Executors.newSingleThreadExecutor()--创建一个只有一个线程的线程池.顺序执行
+	}
 }

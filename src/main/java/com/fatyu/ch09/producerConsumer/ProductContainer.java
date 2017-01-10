@@ -47,7 +47,7 @@ public class ProductContainer {
 		}
 
 		this.notifyAll();// 启动其他线程-->非自身线程
-		
+
 		index--;
 		System.out.println(products[index] + " was Consumed!");
 		try {
@@ -55,7 +55,7 @@ public class ProductContainer {
 		} catch (InterruptedException ie) {
 			ie.printStackTrace();
 		}
-		
+
 		return products[index];
 	}
 }

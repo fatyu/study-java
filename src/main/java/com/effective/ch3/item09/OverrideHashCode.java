@@ -4,7 +4,7 @@ public class OverrideHashCode {
 
 	@Override
 	public int hashCode() {
-		
+
 		return super.hashCode();
 	}
 

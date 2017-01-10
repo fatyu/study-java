@@ -25,4 +25,3 @@ class TimePrinter implements ActionListener {
 	}
 
 }
-

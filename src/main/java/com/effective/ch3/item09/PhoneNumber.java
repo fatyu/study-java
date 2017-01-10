@@ -49,8 +49,7 @@ public final class PhoneNumber {
 
 		PhoneNumber pn = (PhoneNumber) obj;
 
-		return this.areaCode == pn.areaCode && this.prefix == pn.prefix
-				&& this.lineNumber == pn.lineNumber;
+		return this.areaCode == pn.areaCode && this.prefix == pn.prefix && this.lineNumber == pn.lineNumber;
 	}
 
 	/**

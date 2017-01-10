@@ -22,7 +22,7 @@ public class TestCollection {
 		c.add((long) 1l);
 
 		Iterator iterator = c.iterator();
-		while (iterator.hasNext()){
+		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
 		System.out.println(c.size());

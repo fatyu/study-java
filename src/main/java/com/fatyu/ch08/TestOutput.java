@@ -19,8 +19,7 @@ public class TestOutput {
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
 		int c;
-		
-		
+
 		try {
 			fis = new FileInputStream("src/com/fatyu/ch08/TestInput.java");
 			fos = new FileOutputStream(file);

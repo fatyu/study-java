@@ -30,14 +30,14 @@ public class ValueArraySort {
 
 		for (int i = 0; i < args.length; i++) {
 			pointer = i;
-			
+
 			for (int j = pointer; j < args.length; j++) {
 				if (args[pointer] < args[j]) {
 					pointer = j;
 				}
 
 			}
-			
+
 			if (pointer != i) {
 				/*
 				 * int temp = args[i]; args[i] = args[pointer]; args[pointer] =

@@ -13,8 +13,7 @@ public class ReflectTest {
 		 * 当没有默认的无参构造方法时只能使用getConstructor进行对象实例化
 		 */
 
-		Object copyPerson = classType.getConstructor(new Class[] {})
-				.newInstance(new Object[] {});
+		Object copyPerson = classType.getConstructor(new Class[] {}).newInstance(new Object[] {});
 
 		/**
 		 * 获得Person类中的所有fields【数据属性】
@@ -39,8 +38,7 @@ public class ReflectTest {
 			// 获得get方法
 			Method getMethod = classType.getMethod(get, new Class[] {});
 			// 获得set方法
-			Method setMethod = classType.getMethod(set, new Class[] { field
-					.getType() });
+			Method setMethod = classType.getMethod(set, new Class[] { field.getType() });
 
 			Object value = getMethod.invoke(o, new Object[] {});
 			System.out.println(fieldName + ":" + value.toString());
@@ -51,21 +49,22 @@ public class ReflectTest {
 		return copyPerson;
 
 	}
+
 	public static void main(String[] args) throws Exception {
-		Person p = new Person(21,"ranker");
+		Person p = new Person(21, "ranker");
 		p.setId(new Long(1));
 		Person p1 = (Person) new ReflectTest().copy(p);
-		System.out.println(p1.getId()+" "+p1.getAge()+" "+p1.getName());
+		System.out.println(p1.getId() + " " + p1.getAge() + " " + p1.getName());
 	}
 
 }
 
 class Person {
-	
-	public Person(){
-		
+
+	public Person() {
+
 	}
-	
+
 	public Person(int age, String name) {
 		super();
 		this.age = age;
@@ -91,8 +90,6 @@ class Person {
 	public String getName() {
 		return name;
 	}
-
-	
 
 	public void setName(String name) {
 		this.name = name;

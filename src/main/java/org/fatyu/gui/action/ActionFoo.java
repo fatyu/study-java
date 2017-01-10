@@ -34,54 +34,38 @@ class ActionFrame extends JFrame {
 
 	public ActionFrame() {
 		try {
-			UIManager
-					.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		jp = new JPanel();
 		this.add(jp);
-		jp.add(new JButton(
-				new ColorAction("YELLOW", new ImageIcon(Toolkit
-						.getDefaultToolkit().getImage(
-								ActionFoo.class.getResource("blue.gif"))),
-						Color.YELLOW)));
-		jp.add(new JButton(new ColorAction("RED", new ImageIcon(Toolkit
-				.getDefaultToolkit().getImage(
-						ActionFoo.class.getResource("blue.gif"))), Color.RED)));
-		jp.add(new JButton(new ColorAction("BLUE", new ImageIcon(Toolkit
-				.getDefaultToolkit().getImage(
-						ActionFoo.class.getResource("blue.gif"))), Color.BLUE)));
+		jp.add(new JButton(new ColorAction("YELLOW",
+				new ImageIcon(Toolkit.getDefaultToolkit().getImage(ActionFoo.class.getResource("blue.gif"))),
+				Color.YELLOW)));
+		jp.add(new JButton(new ColorAction("RED",
+				new ImageIcon(Toolkit.getDefaultToolkit().getImage(ActionFoo.class.getResource("blue.gif"))),
+				Color.RED)));
+		jp.add(new JButton(new ColorAction("BLUE",
+				new ImageIcon(Toolkit.getDefaultToolkit().getImage(ActionFoo.class.getResource("blue.gif"))),
+				Color.BLUE)));
 		this.setAlwaysOnTop(true);
 		this.setVisible(true);
 		this.setSize(400, 400);
 		this.setVisible(true);
 
-		InputMap im = jp
-				.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+		InputMap im = jp.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 		im.put(KeyStroke.getKeyStroke("Y"), "yellowb"); // 指定快捷键
 		im.put(KeyStroke.getKeyStroke("R"), "redb"); // 指定快捷键
 		im.put(KeyStroke.getKeyStroke("B"), "blueb"); // 指定快捷键
 
 		ActionMap am = jp.getActionMap();
-		am.put("yellowb",
-				new ColorAction(
-						"YELLOW",
-						new ImageIcon(
-								"E:\\Work\\Java\\Java\\src\\org\\fatyu\\gui\\action\\blue.gif"),
-						Color.YELLOW)); // 为快捷键指定事件
-		am.put("redb",
-				new ColorAction(
-						"RED",
-						new ImageIcon(
-								"E:\\Work\\Java\\Java\\src\\org\\fatyu\\gui\\action\\blue.gif"),
-						Color.RED)); // 为快捷键指定事件
-		am.put("blueb",
-				new ColorAction(
-						"BLUE",
-						new ImageIcon(
-								"E:\\Work\\Java\\Java\\src\\org\\fatyu\\gui\\action\\blue.gif"),
-						Color.BLUE)); // 为快捷键指定事件
+		am.put("yellowb", new ColorAction("YELLOW",
+				new ImageIcon("E:\\Work\\Java\\Java\\src\\org\\fatyu\\gui\\action\\blue.gif"), Color.YELLOW)); // 为快捷键指定事件
+		am.put("redb", new ColorAction("RED",
+				new ImageIcon("E:\\Work\\Java\\Java\\src\\org\\fatyu\\gui\\action\\blue.gif"), Color.RED)); // 为快捷键指定事件
+		am.put("blueb", new ColorAction("BLUE",
+				new ImageIcon("E:\\Work\\Java\\Java\\src\\org\\fatyu\\gui\\action\\blue.gif"), Color.BLUE)); // 为快捷键指定事件
 	}
 
 	public class ColorAction extends AbstractAction {
@@ -98,8 +82,7 @@ class ActionFrame extends JFrame {
 		public ColorAction(String name, Icon icon, Color c) {
 			putValue(Action.NAME, name);
 			putValue(Action.SMALL_ICON, icon);
-			putValue(Action.SHORT_DESCRIPTION,
-					"set panel color to" + name.toLowerCase());
+			putValue(Action.SHORT_DESCRIPTION, "set panel color to" + name.toLowerCase());
 			putValue("color", c);
 		}
 

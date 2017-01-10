@@ -52,7 +52,7 @@ public class TestBuilder {
 		this.classLife = bi.classLife;
 		this.classSize = bi.classSize;
 	}
-	
+
 	public String getClassName() {
 		return className;
 	}

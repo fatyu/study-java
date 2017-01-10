@@ -1,6 +1,5 @@
 package com.effective.ch2.item5;
 
-
 /**
  * 通过自动封箱和自动拆箱来解释非必须对象创建的缺点
  * 

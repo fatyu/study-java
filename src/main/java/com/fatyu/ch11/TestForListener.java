@@ -20,12 +20,12 @@ public class TestForListener {
 		Button b = new Button("Click Me");
 		FyListener fl = new FyListener();
 		b.addActionListener(fl);
-		frame.setBounds(200,200,400,400);
+		frame.setBounds(200, 200, 400, 400);
 		frame.setLayout(new FlowLayout());
 		frame.setBackground(Color.GRAY);
 		frame.add(b);
 		frame.setVisible(true);
-		
+
 	}
 }
 

@@ -28,10 +28,8 @@ public class ObjectStream {
 			TestForObjectStream tfos = (TestForObjectStream) ois.readObject();
 			TestForObjectStream tfos2 = (TestForObjectStream) ois.readObject();
 
-			System.out.println(tfos.name + "\n" + tfos.age + "\n" + tfos.leave
-					+ "\n" + tfos.studyCourse+"\n");
-			System.out.println(tfos2.name + "\n" + tfos2.age + "\n" + tfos2.leave
-					+ "\n" + tfos2.studyCourse+"\n");
+			System.out.println(tfos.name + "\n" + tfos.age + "\n" + tfos.leave + "\n" + tfos.studyCourse + "\n");
+			System.out.println(tfos2.name + "\n" + tfos2.age + "\n" + tfos2.leave + "\n" + tfos2.studyCourse + "\n");
 
 			ois.close();
 		} catch (Exception e) {
@@ -43,9 +41,10 @@ public class ObjectStream {
 class TestForObjectStream implements Serializable {
 	private static final long serialVersionUID = -1378274037093754064L;
 
-	public TestForObjectStream(String name){
+	public TestForObjectStream(String name) {
 		this.name = name;
 	}
+
 	transient int age = 21;//
 	String name = "fatyu";
 	String leave = "FreshBird";

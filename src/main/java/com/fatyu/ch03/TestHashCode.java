@@ -6,8 +6,7 @@ public class TestHashCode {
 
 		for (int i = 0; i < 1000; i++) {
 			TestHashCode thc = new TestHashCode();
-			System.out.println(thc.toString().substring(
-					thc.getClass().getName().length() + 1));
+			System.out.println(thc.toString().substring(thc.getClass().getName().length() + 1));
 		}
 
 	}

@@ -9,14 +9,15 @@ import java.util.Date;
  */
 public class DeprecatedTest {
 
-	@SuppressWarnings({"deprecation"})
+	@SuppressWarnings({ "deprecation" })
 	public static void main(String[] args) {
 		Date date = new Date();
 		System.out.println(date.toLocaleString());
 		deprecatedTest();
 	}
+
 	@Deprecated
-	public static void deprecatedTest(){
+	public static void deprecatedTest() {
 		System.out.println("测试...");
 	}
 }

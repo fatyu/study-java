@@ -16,8 +16,7 @@ public class TestJdbc {
 			// 注册驱动
 			Class.forName("com.mysql.jdbc.Driver");
 			// 获取连接
-			conn = DriverManager.getConnection(
-					"jdbc:mysql://127.0.0.1:3306/Fatyu", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Fatyu", "root", "root");
 			// 获得操作数据库对象
 			st = conn.createStatement();
 			// 编写sql语句并使用操作数据库对象执行sql语句

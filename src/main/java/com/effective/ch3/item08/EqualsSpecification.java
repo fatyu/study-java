@@ -39,7 +39,6 @@ class UnFriendlyString {
 		// return s.equalsIgnoreCase((String) o);
 		// }
 		// return false;
-		return o instanceof UnFriendlyString
-				&& ((UnFriendlyString) o).s.equalsIgnoreCase(s);
+		return o instanceof UnFriendlyString && ((UnFriendlyString) o).s.equalsIgnoreCase(s);
 	}
 }

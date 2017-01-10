@@ -35,12 +35,12 @@ class YieldThread extends Thread {
 			pw = new PrintWriter(fw, true);
 			pw.println("Strat logging..." + System.currentTimeMillis());
 			for (int i = 1; i <= 1000; i++) {
-				if (i % 50 == 0);
+				if (i % 50 == 0)
+					;
 				yield();//yield not use with setPriority()
-				pw.println(this.getName() + "\t:" + i + "\t:"
-						+ "---------------" + new Date()
-						+ "--------------------");
-				
+				pw.println(
+						this.getName() + "\t:" + i + "\t:" + "---------------" + new Date() + "--------------------");
+
 			}
 			pw.println("End logging..." + System.currentTimeMillis());
 		} catch (FileNotFoundException e) {

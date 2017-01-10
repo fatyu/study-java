@@ -18,9 +18,9 @@ public class TestBatchProcess {
 					ps.setString(2, "Fatyu" + (i * 100 + j));
 					ps.addBatch();
 				}
-ps.executeBatch();
+				ps.executeBatch();
 			}
-			
+
 			JdbcUtil.relase(ps);
 
 			ps = conn.prepareStatement("select * from fatyu");

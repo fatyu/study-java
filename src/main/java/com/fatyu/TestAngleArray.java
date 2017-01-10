@@ -16,7 +16,7 @@ public class TestAngleArray {
 		 */
 		for (int i = 0; i <= MAX; i++) {
 			doubles[i] = new int[i + 1];
-		}			// 形成列数递加1的11行二维数组
+		} // 形成列数递加1的11行二维数组
 		/*
 		 * 为多位数组分别赋值
 		 */

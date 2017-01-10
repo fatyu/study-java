@@ -35,11 +35,11 @@ public class BakFile extends JFrame {
 		this.chooseFile.setText("选择文件");
 		this.chooseFile.setBounds(new Rectangle(20, 20, 100, 20));
 		this.chooseFile.addActionListener(new ActionListener() {// 添加监听器
-					@Override
-					public void actionPerformed(ActionEvent e) {
-						chooseFile_actionPerformed(e);
-					}
-				});
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				chooseFile_actionPerformed(e);
+			}
+		});
 		getContentPane().add(this.chooseFile, null);// 将按钮添加到pane上
 	}
 
@@ -109,8 +109,7 @@ public class BakFile extends JFrame {
 		if (frameSize.width > screenSize.width) {
 			frameSize.width = screenSize.width;
 		}
-		frame.setLocation((screenSize.width - frameSize.width) / 2,
-				(screenSize.height - frameSize.height) / 2);
+		frame.setLocation((screenSize.width - frameSize.width) / 2, (screenSize.height - frameSize.height) / 2);
 		frame.setDefaultCloseOperation(3);
 		frame.setVisible(true);
 		frame.setResizable(false);

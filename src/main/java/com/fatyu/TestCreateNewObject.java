@@ -29,7 +29,7 @@ public class TestCreateNewObject {
 	}
 }
 
-class OneObject implements Cloneable{
+class OneObject implements Cloneable {
 
 	public OneObject() {
 	}
@@ -44,4 +44,3 @@ class OneObject implements Cloneable{
 	}
 
 }
-

@@ -45,7 +45,7 @@ public class SubStringByByte {
 				}
 			}
 		}
-//判断截取位置是不是为奇数并且根据奇数位的值确定截取位置
+		//判断截取位置是不是为奇数并且根据奇数位的值确定截取位置
 		if (index % 2 == 1) {
 			if (bytes[index] == 0) {
 				index = index + 1;

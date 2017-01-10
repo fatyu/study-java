@@ -15,9 +15,9 @@ public class TestLayout {
 		Panel p1 = new Panel(new BorderLayout());
 		Panel p2 = new Panel(new BorderLayout());
 
-		Panel p3 = new Panel(new GridLayout(2,1));
+		Panel p3 = new Panel(new GridLayout(2, 1));
 
-		Panel p4 = new Panel(new GridLayout(2,1));
+		Panel p4 = new Panel(new GridLayout(2, 1));
 
 		Button[] buttons = new Button[8];
 		for (int i = 1; i <= 8; i++) {
@@ -26,24 +26,23 @@ public class TestLayout {
 		}
 		p1.add(buttons[0], BorderLayout.WEST);
 		p1.add(buttons[1], BorderLayout.EAST);
-		
+
 		p1.add(p3, BorderLayout.CENTER);
-		
+
 		p3.add(buttons[2]);
 		p3.add(buttons[3]);
-		
-		
+
 		p2.add(buttons[4], BorderLayout.EAST);
 		p2.add(buttons[5], BorderLayout.WEST);
-		
+
 		p2.add(p4, BorderLayout.CENTER);
-		
+
 		p4.add(buttons[6]);
 		p4.add(buttons[7]);
-		
+
 		f.add(p1);
 		f.add(p2);
-		
+
 		f.pack();
 		f.setVisible(true);
 	}

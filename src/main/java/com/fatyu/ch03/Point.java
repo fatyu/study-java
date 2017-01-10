@@ -43,16 +43,14 @@ public class Point {
 
 		return Math.sqrt(x * x + y * y + z * z);
 	}
-	
-	
+
 	public static void main(String[] args) {
 		Point p = new Point();
 		p.setX(1.732);
 		p.setY(1.732);
 		p.setZ(1.732);
-		
+
 		System.out.println(p.length(p.x, p.y, p.z));
-		
-		
+
 	}
 }

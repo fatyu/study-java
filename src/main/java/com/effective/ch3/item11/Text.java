@@ -9,7 +9,7 @@ public class Text implements Cloneable {
 		return super.clone();
 	}
 
-	public Text()  {
+	public Text() {
 		super();
 	}
 
@@ -18,7 +18,6 @@ public class Text implements Cloneable {
 		this.title = title;
 		this.content = content;
 	}
-
 
 	public String getTitle() {
 		return title;

@@ -21,8 +21,7 @@ public class TestHttpProtocol {
 			// 建立连接
 			Socket socket = new Socket("127.0.0.1", 8080);
 
-			PrintWriter pw = new PrintWriter(new OutputStreamWriter(socket
-					.getOutputStream()));
+			PrintWriter pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
 
 			// 传递参数
 			pw.println("GET / HTTP/1.1");
@@ -33,8 +32,7 @@ public class TestHttpProtocol {
 			pw.print("\n");
 			pw.flush();
 
-			BufferedReader bd = new BufferedReader(new InputStreamReader(socket
-					.getInputStream()));
+			BufferedReader bd = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			String s = "";
 			while ((s = bd.readLine()) != null) {
 				System.out.println(s);

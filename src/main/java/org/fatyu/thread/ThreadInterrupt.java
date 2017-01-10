@@ -10,23 +10,23 @@ package org.fatyu.thread;
  * @@author Fatyu
  * @@see java.lang.Thread#interrupt()
  */
-public class ThreadInterrupt{
-    @SuppressWarnings("static-access")
-    public static void main(String[] args){
-	Thread t = Thread.currentThread();
-	try{
-	    t.sleep(100);
-	    System.out.println("====================-");
-	} catch (InterruptedException exception){
-	    exception.printStackTrace();
+public class ThreadInterrupt {
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) {
+		Thread t = Thread.currentThread();
+		try {
+			t.sleep(100);
+			System.out.println("====================-");
+		} catch (InterruptedException exception) {
+			exception.printStackTrace();
+		}
+		t.interrupt(); //将线程中断
+		try {
+			t.sleep(100); //因为线程被中断,产生中断异常
+		} catch (InterruptedException exception) {
+			exception.printStackTrace();
+		} finally {
+			System.out.println(t.isAlive());
+		}
 	}
-	t.interrupt(); //将线程中断
-	try{
-	    t.sleep(100); //因为线程被中断,产生中断异常
-	} catch (InterruptedException exception){
-	    exception.printStackTrace();
-	} finally{
-	    System.out.println(t.isAlive());
-	}
-    }
 }

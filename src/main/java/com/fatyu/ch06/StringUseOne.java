@@ -1,4 +1,5 @@
 package com.fatyu.ch06;
+
 /**
  * 简单的计算字符串中出现大写字母 小写字母 非字母的个数
  * @@author Fatyu
@@ -23,7 +24,6 @@ public class StringUseOne {
 			}
 		}
 
-		System.out.println("Upper:\t" + upper + "\n" + "Lower:\t" + lower
-				+ "\n" + "Other:\t" + other);
+		System.out.println("Upper:\t" + upper + "\n" + "Lower:\t" + lower + "\n" + "Other:\t" + other);
 	}
 }

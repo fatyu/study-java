@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+
 /**
  * 设置输出对象位置 可用来记录日志
  * @@author Fatyu
@@ -20,7 +21,7 @@ public class TestPrintStream {
 			for (char i = 0; i < 65535; i++) {
 				System.out.print(i);
 				int ln = 0;
-				if(ln++>100){
+				if (ln++ > 100) {
 					System.out.println();
 					ln = 0;
 				}

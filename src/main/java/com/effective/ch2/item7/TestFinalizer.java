@@ -18,7 +18,7 @@ public class TestFinalizer {
 
 	// System.runFinalization();//此方法表示JVM进行一定努力去调用对象
 	// System.gc();
-	
+
 	// 手工调用finalizer链
 	@Override
 	protected void finalize() throws Throwable {

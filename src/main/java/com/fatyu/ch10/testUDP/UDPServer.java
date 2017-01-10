@@ -10,26 +10,24 @@ public class UDPServer {
 
 	public static void main(String[] args) {
 		byte[] bytes = new byte[18];// 用来存储数据
-
-		//
 		DatagramPacket dp = new DatagramPacket(bytes, bytes.length);
 		DatagramSocket ds = null;
 		try {
 			ds = new DatagramSocket(8888);
 		} catch (SocketException se) {
 			se.printStackTrace();
+		} finally {
+			ds.close();
 		}
 
 		for (;;) {
 			try {
 				ds.receive(dp);
 				FileOutputStream fos = new FileOutputStream("e:/cp.txt");
-				
-				
-				for(int i =0;i<bytes.length;i++){
-					fos.write((char)bytes[i]);
+				for (int i = 0; i < bytes.length; i++) {
+					fos.write((char) bytes[i]);
 				}
-				
+				fos.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
