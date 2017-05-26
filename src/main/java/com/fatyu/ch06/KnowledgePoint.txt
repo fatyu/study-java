@@ -1,4 +1,0 @@
-1. 字符串的创建 使用赋值方式
-2. 字符串的常用方法
-	split() indexof() valueOf(Object obj)...
-
